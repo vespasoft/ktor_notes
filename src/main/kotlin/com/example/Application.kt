@@ -5,7 +5,8 @@ import io.ktor.server.netty.*
 import com.example.plugins.*
 
 fun main() {
-    embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
+    val port = System.getenv("PORT")?.toInt() ?: 8080
+    embeddedServer(Netty, port = port) {
         configureRouting()
     }.start(wait = true)
 }
