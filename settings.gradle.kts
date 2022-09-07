@@ -1,1 +1,1 @@
-rootProject.name = "ktor-get-started-sample"
+rootProject.name = "ktor-notes"

@@ -1,4 +1,4 @@
-package com.example.plugins
+package com.example.routes
 
 import io.ktor.server.application.*
 import io.ktor.server.response.*
@@ -8,7 +8,8 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondText("Hello World!")
+            call.respondText("Notes API Rest")
         }
     }
+
 }
